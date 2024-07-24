@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+.logo{
+    width: 20%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    width: 2500%;
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav ul li:hover .dropdown {
+    display: block;
+}
+
+header nav ul li .dropdown li {
+    padding: 10px;
+}
+
+header nav ul li .dropdown li a {
+    display: block;
+}
+
+.loan-application {
+    display: flex;
+    margin: 2rem auto;
+    align-items: flex-start;
+}
+
+.lobby{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 50%;
+}
+
+.image-containers {
+    flex: 1;
+    position: relative;
+}
+
+.image-containers img {
+    max-width: 90%;
+    border-radius: 5px;
+}
+
+.w3-container{
+   margin: 0 40px;
+}
+
+.caption {
+    left: 10%;
+    top: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 0.25rem;
+    position: absolute;
+    width: 70%;
+    border-radius: 5px;
+}
+
+form {
+    flex: 1;
+    padding: 2rem;
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input {
+    width: calc(100% - 1rem);
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 50%;
+    padding: 0.5rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: .5rem;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.rules {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+
+.rule {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.466);
+    border-top:4px solid #4caf50;
+
+}
+
+.rule h3 {
+    margin-top: 0;
+}
+
+.rule ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rule ul li {
+    background: url('check.png') no-repeat left center;
+    background-size: 1rem 1rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.buttom{
+    margin-top: 20%;
+}
+
+@media (min-width: 768px) {
+    .loan-application {
+        flex-direction: row;
+    }
+
+    .rules {
+        flex-direction: row;
+    }
+}

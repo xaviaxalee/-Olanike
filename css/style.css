@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 5px 10px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 500px;
+    margin:20px 0;
+}
+
+.logo{
+    width: 20%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    width: 2500%;
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav ul li:hover .dropdown {
+    display: block;
+}
+
+header nav ul li .dropdown li {
+    padding: 10px;
+}
+
+header nav ul li .dropdown li a {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+#text-box {
+    width: 50%;
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.top-bar{
+    border-radius: 20px;
+}
+
+.hero-text .buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-text .buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-text .buttons button:first-child {
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.hero-text{
+    margin-top: 20%;
+}
+
+.hero-text .buttons button:last-child {
+  border: solid;
+    color: black;
+    border-radius: 20px;
+}
+
+.hero-image{
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Mission Section */
+.mission {
+    padding: 40px;
+    text-align: center;
+    background-color: #e9e1e1;
+}
+.mission p{
+text-align: start;
+}
+
+
+/* Geo Zones Section */
+.geo-zones {
+    padding: 40px 20px;
+}
+
+#rot{
+margin: 30px;
+}
+
+.geo-zones h2 {
+    text-align: center;
+}
+
+.geo-zones ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.geo-zones ul li {
+    background-color: #e9ecef;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Solution Section */
+.solution {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 100px;
+    }
+    .text-section {
+        flex: 1 1 300px;
+        padding: 20px;
+    }
+    .text-section h2 {
+        color: red;
+    }
+    .text-section p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .text-section button {
+       
+        color: black;
+        border: 2px solid;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        /* transition: background-color 0.3s ease; */
+    }
+    .text-section button:hover {
+        /* background-color: lightgray; */
+    }
+    #grp{
+        padding-bottom: 10px;
+    }
+    .image-section {
+        flex: 1 1 300px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+    .image-section img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+/* Core Values Section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.cards-section {
+    flex: 1 1 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    left: 2px;
+}
+.card {
+    width: 230px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* transition: transform 0.3s; */
+    z-index: 1;
+    position: absolute;
+}
+.card:hover {
+    transform: translate(10px);
+    z-index: 333;
+}
+.card h3 {
+    margin: 10px 0;
+}
+.card p {
+    font-size: 14px;
+}
+.card a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.empowerment {
+    background-color: #002984;
+    left: -50px;
+    bottom:-100px;
+}
+.innovation {
+    background-color: #00c853;
+    bottom:50px;
+    left: 90px;
+}
+.equality {
+    background-color: black;
+    right: 30px;
+    bottom:-100px;
+}
+.text-section {
+    flex: 1 1 40%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.text-section:last-child {
+    background-color: aliceblue;
+}
+.text-section h2 {
+    color: red;
+}
+.text-section ul {
+    list-style: none;
+    padding: 0;
+}
+.text-section ul li {
+    padding: 10px 0;
+}
+.text-section ul li::before {
+    content: url(./img/Vector.png);
+    margin-right: 10px;
+    color: red;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    background-image: url('../images/Vector14.png');
+    background-size: cover;
+    background-color: #3100e2;
+    color: #fff;
+}
+.footer-text {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+
+.footer-text button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    background-color: #12C274;
+    color: #fff;
+}
+.footer-text button:last-child{
+    background-color: #12c27300;
+    border: 1px solid #12C274;
+}
+.footer-text button:last-child:hover {
+    background-color: #12C274;
+}
+.footer-text button:hover{
+    background-color: #12c27300;
+    border: 1px solid #12C274;
+}
+.footer-image {
+    width: 60%;
+}
+.footer-image img {
+    max-width: 90%;
+    height: auto;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .core-values .values .value {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 576px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .core-values .values .value {
+        flex: 1 1 100%;
+    }
+}
