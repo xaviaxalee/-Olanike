@@ -5,6 +5,9 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 p{
     margin: 0;
     padding: 5px 10px;
@@ -98,14 +101,14 @@ header nav ul li .dropdown li a {
     gap: 15px;
 }
 
-.hero-text .buttons button {
+.hero-text .buttons a {
     padding: 10px 20px;
     font-size: 1em;
     border: none;
     cursor: pointer;
 }
 
-.hero-text .buttons button:first-child {
+.hero-text .buttons a:first-child {
     background-color: #dc3545;
     color: #fff;
     border-radius: 10px;
@@ -115,7 +118,7 @@ header nav ul li .dropdown li a {
     margin-top: 20%;
 }
 
-.hero-text .buttons button:last-child {
+.hero-text .buttons a:last-child {
   border: solid;
     color: black;
     border-radius: 20px;
@@ -198,9 +201,7 @@ margin: 30px;
         cursor: pointer;
         /* transition: background-color 0.3s ease; */
     }
-    .text-section button:hover {
-        /* background-color: lightgray; */
-    }
+
     #grp{
         padding-bottom: 10px;
     }
@@ -216,14 +217,6 @@ margin: 30px;
         border-radius: 10px;
     }
 
-
-/* Core Values Section */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .container {
     display: flex;
     flex-wrap: wrap;
